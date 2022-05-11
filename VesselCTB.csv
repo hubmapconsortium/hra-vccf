@@ -140,17 +140,6 @@ ascending pharyngeal artery,BGene,vascular smooth muscle cell,vascular associate
 ascending pharyngeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 ascending pharyngeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 ascending pharyngeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-clival branch of ascending pharyngeal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-clival branch of ascending pharyngeal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-clival branch of ascending pharyngeal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-clival branch of ascending pharyngeal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-clival branch of ascending pharyngeal artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-clival branch of ascending pharyngeal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-clival branch of ascending pharyngeal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-clival branch of ascending pharyngeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-clival branch of ascending pharyngeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-clival branch of ascending pharyngeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-clival branch of ascending pharyngeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 inferior tympanic artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 inferior tympanic artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 inferior tympanic artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -1207,6 +1196,28 @@ dorsal meningeal artery,BGene,vascular smooth muscle cell,vascular associated sm
 dorsal meningeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 dorsal meningeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 dorsal meningeal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
+tentorial artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
+tentorial artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
+tentorial artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
+tentorial artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
+tentorial artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
+tentorial artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
+tentorial artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
+tentorial artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
+tentorial artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
+tentorial artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
+tentorial artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
+dural artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
+dural artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
+dural artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
+dural artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
+dural artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
+dural artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
+dural artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
+dural artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
+dural artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
+dural artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
+dural artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 inferior hypophyseal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 inferior hypophyseal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 inferior hypophyseal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -1233,39 +1244,6 @@ secondary capillary plexus of anterior pituitary gland #2,BGene,blood vessel end
 secondary capillary plexus of anterior pituitary gland #2,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
 secondary capillary plexus of anterior pituitary gland #2,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
 secondary capillary plexus of anterior pituitary gland #2,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,capillary endothelial cell,capillary endothelial cell,CL:0002144,,,,,,
-tentorial artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-tentorial artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-tentorial artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-tentorial artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-tentorial artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-tentorial artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-tentorial artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-tentorial artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-tentorial artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-tentorial artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-tentorial artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-dural artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-dural artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-dural artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-dural artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-dural artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-dural artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-dural artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-dural artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-dural artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-dural artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-dural artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-inferolateral trunk of internal carotid artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-inferolateral trunk of internal carotid artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-inferolateral trunk of internal carotid artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-inferolateral trunk of internal carotid artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-inferolateral trunk of internal carotid artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-inferolateral trunk of internal carotid artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-inferolateral trunk of internal carotid artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-inferolateral trunk of internal carotid artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-inferolateral trunk of internal carotid artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-inferolateral trunk of internal carotid artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-inferolateral trunk of internal carotid artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 middle cerebral artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 middle cerebral artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 middle cerebral artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -1310,17 +1288,6 @@ anterior temporal artery,BGene,vascular smooth muscle cell,vascular associated s
 anterior temporal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 anterior temporal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 anterior temporal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-lateral frontobasal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-lateral frontobasal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-lateral frontobasal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-lateral frontobasal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-lateral frontobasal artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-lateral frontobasal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-lateral frontobasal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-lateral frontobasal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-lateral frontobasal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-lateral frontobasal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-lateral frontobasal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 lateral lenticulostriate artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 lateral lenticulostriate artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 lateral lenticulostriate artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -1764,17 +1731,6 @@ anterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,v
 anterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 anterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 anterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-pancreatic branch of anterior superior pancreaticoduodenal artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-pancreatic branch of anterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 posterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 posterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 posterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -1786,17 +1742,6 @@ posterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,
 posterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 posterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 posterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-pancreatic branch of posterior superior pancreaticoduodenal artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-pancreatic branch of posterior superior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 supraduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 supraduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 supraduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -4229,17 +4174,6 @@ anterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,v
 anterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 anterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 anterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-pancreatic branch of anterior inferior pancreaticoduodenal artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-pancreatic branch of anterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 posterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 posterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 posterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -4251,17 +4185,6 @@ posterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,
 posterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 posterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 posterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-pancreatic branch of posterior inferior pancreaticoduodenal artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-pancreatic branch of posterior inferior pancreaticoduodenal artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 jejunal branches,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 jejunal branches,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 jejunal branches,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -4713,17 +4636,6 @@ left subclavian artery,BGene,vascular smooth muscle cell,vascular associated smo
 left subclavian artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 left subclavian artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 left subclavian artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
-dorsal scapular artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-dorsal scapular artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-dorsal scapular artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-dorsal scapular artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-dorsal scapular artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
-dorsal scapular artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
-dorsal scapular artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
-dorsal scapular artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
-dorsal scapular artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
-dorsal scapular artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
-dorsal scapular artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 subclavian artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 subclavian artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 subclavian artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -5263,6 +5175,17 @@ posterior intercostal artery 2,BGene,vascular smooth muscle cell,vascular associ
 posterior intercostal artery 2,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
 posterior intercostal artery 2,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
 posterior intercostal artery 2,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
+dorsal scapular artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
+dorsal scapular artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
+dorsal scapular artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
+dorsal scapular artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
+dorsal scapular artery,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of artery,endothelial cell of artery,CL:1000413,,,,,,
+dorsal scapular artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,AIFM2 (FSP1),AIFM2,HGNC:21411
+dorsal scapular artery,BGene,fibroblast,fibroblast,CL:0000057,,,,,,,DDR2,DDR2,HGNC:2731
+dorsal scapular artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,ACTA2,ACTA2,HGNC:130
+dorsal scapular artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,CNN1,CNN1,HGNC:2155
+dorsal scapular artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,MYOCD,MYOCD,HGNC:16067
+dorsal scapular artery,BGene,vascular smooth muscle cell,vascular associated smooth muscle cell,CL:0000359,,,,,,,TAGLN (SM22),TAGLN,HGNC:11553
 internal thoracic artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 internal thoracic artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 internal thoracic artery,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -6764,16 +6687,16 @@ posterior branch of right hepatic portal vein #2,BGene,blood vessel endothelial 
 posterior branch of right hepatic portal vein #2,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
 posterior branch of right hepatic portal vein #2,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
 posterior branch of right hepatic portal vein #2,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of vein,vein endothelial cell,CL:0002543,,,,,,
-left inferior phrenic vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-left inferior phrenic vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-left inferior phrenic vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-left inferior phrenic vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-left inferior phrenic vein,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of vein,vein endothelial cell,CL:0002543,,,,,,
 left renal vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 left renal vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 left renal vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
 left renal vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
 left renal vein,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of vein,vein endothelial cell,CL:0002543,,,,,,
+left inferior phrenic vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
+left inferior phrenic vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
+left inferior phrenic vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
+left inferior phrenic vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
+left inferior phrenic vein,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of vein,vein endothelial cell,CL:0002543,,,,,,
 left ovarian vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 left ovarian vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 left ovarian vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
@@ -7465,11 +7388,6 @@ superior choroid vein,BGene,blood vessel endothelial cell,blood vessel endotheli
 superior choroid vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
 superior choroid vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
 superior choroid vein,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of vein,vein endothelial cell,CL:0002543,,,,,,
-superior striate vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
-superior striate vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
-superior striate vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
-superior striate vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TIE1,TIE1,HGNC:11809
-superior striate vein,,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,endothelial cell of vein,vein endothelial cell,CL:0002543,,,,,,
 superior thalamostriate vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,CDH5 (CD144),CDH5,HGNC:1764
 superior thalamostriate vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,PECAM1 (CD31),PECAM1,HGNC:8823
 superior thalamostriate vein,BGene,blood vessel endothelial cell,blood vessel endothelial cell,CL:0000071,,,,,,,TEK (TIE2),TEK,HGNC:11724
