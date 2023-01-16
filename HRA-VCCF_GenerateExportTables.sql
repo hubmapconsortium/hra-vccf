@@ -1,7 +1,7 @@
 --#############################################################################
 --#############################################################################
 --## HRA-VCCF Generate Export Tables
---## Date: February 26, 2022
+--## Date: January 15, 2023
 --## Database: Microsoft SQL Server
 --## Author: Griffin M Weber, MD, PhD (weber@hms.harvard.edu)
 --#############################################################################
@@ -27,6 +27,9 @@ select *
 
 alter table #CellTypeBiomarker add primary key (RuleID)
 
+select *
+	into #Geometry
+	from Geometry
 
 
 --*****************************************************************************
@@ -163,7 +166,7 @@ select
 		isnull(x.ASXML.value('x[49]','varchar(200)'),'') AS17, isnull(x.ASXML.value('x[50]','varchar(200)'),'') AS17Label, isnull(x.ASXML.value('x[51]','varchar(200)'),'') AS17ID,
 		isnull(x.ASXML.value('x[52]','varchar(200)'),'') AS18, isnull(x.ASXML.value('x[53]','varchar(200)'),'') AS18Label, isnull(x.ASXML.value('x[54]','varchar(200)'),'') AS18ID,
 		isnull(x.ASXML.value('x[55]','varchar(200)'),'') AS19, isnull(x.ASXML.value('x[56]','varchar(200)'),'') AS19Label, isnull(x.ASXML.value('x[57]','varchar(200)'),'') AS19ID,
-		--isnull(x.ASXML.value('x[58]','varchar(200)'),'') AS20, isnull(x.ASXML.value('x[59]','varchar(200)'),'') AS20Label, isnull(x.ASXML.value('x[60]','varchar(200)'),'') AS20ID,
+		isnull(x.ASXML.value('x[58]','varchar(200)'),'') AS20, isnull(x.ASXML.value('x[59]','varchar(200)'),'') AS20Label, isnull(x.ASXML.value('x[60]','varchar(200)'),'') AS20ID,
 		isnull(c.CT1,'') CT1, isnull(c.CT1Label,'') CT1Label, isnull(c.CT1ID,'') CT1ID,
 		isnull(c.CT2,'') CT2, isnull(c.CT2Label,'') CT2Label, isnull(c.CT2ID,'') CT2ID,
 		isnull(c.CT3,'') CT3, isnull(c.CT3Label,'') CT3Label, isnull(c.CT3ID,'') CT3ID,
@@ -215,8 +218,13 @@ select c.*, v.PathFromHeart
 			on c.Vessel=v.Vessel
 	order by v.PathFromHeart, CT1, CT2, CT3, BGene1
 
+--Geometry table
+select *
+	from #Geometry
+	order by Vessel, Property, Sex, Population, Reference
+
 --Body part mappings
-select BodyPart, BodyPartID, Vessel, ASLabel VesselLabel, replace(ASID,'fma','FMA:') VesselID, VesselType, VesselSubType, PortalSystem, FTU
+select BodyPart, BodyPartID, BodySubPart, BodySubPartID, Vessel, ASLabel VesselLabel, replace(ASID,'fma','FMA:') VesselID, VesselType, VesselSubType, PortalSystem, FTU
 	from #Vessel
 	order by 1, 3
 
@@ -236,6 +244,7 @@ select BodyPart, count(*) Vessels
 /*
 drop table #Vessel
 drop table #CellTypeBiomarker
+drop table #Geometry
 drop table #VesselCellType
 drop table #VesselCellTypeBiomarker
 drop table #VesselCTB

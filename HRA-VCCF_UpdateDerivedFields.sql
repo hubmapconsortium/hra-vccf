@@ -1,7 +1,7 @@
 --#############################################################################
 --#############################################################################
 --## HRA-VCCF Update Derived Fields
---## Date: February 26, 2022
+--## Date: January 15, 2023
 --## Database: Microsoft SQL Server
 --## Author: Griffin M Weber, MD, PhD (weber@hms.harvard.edu)
 --#############################################################################
@@ -23,6 +23,7 @@ select *
 -- Set default values for derived fields
 update #vessel
 	set VesselBaseName='',
+		FullVesselNameList='',
 		HasBranches=0,
 		VirtualVesselOfList='',
 		VirtualVesselOfCount=0,
@@ -34,7 +35,7 @@ update #vessel
 
 --*****************************************************************************
 --*****************************************************************************
---** VesselBaseName, HasBranches
+--** VesselBaseName, FullVesselNameList, HasBranches
 --*****************************************************************************
 --*****************************************************************************
 
@@ -45,6 +46,26 @@ update #vessel
 			else left(Vessel, charindex('#',Vessel)-2) 
 			end
 		)
+
+update v
+	set v.FullVesselNameList=t.FullVesselNameList
+	from #vessel v
+		cross apply (
+			select STRING_AGG(v,';') FullVesselNameList
+			from (
+				select v, s, row_number() over (partition by v order by s) i
+				from (
+					select VesselBaseName v, 0 s
+					union all select UBERONLabel, 1
+					union all select FMALabel, 2
+					union all select value, 3 from STRING_SPLIT(OtherUberonFmaNameList,';')
+					union all select TerminologiaAnatomica, 4
+					union all select value, 5 from STRING_SPLIT(OtherVesselNameList,';')
+				) t
+				where v<>''
+			) t
+			where i=1
+		) t
 
 update #vessel
 	set HasBranches = (
@@ -286,5 +307,4 @@ update a
 	from Vessel a
 		inner join #vessel b
 		on a.vessel=b.vessel
-
 

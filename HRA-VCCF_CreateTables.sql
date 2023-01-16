@@ -1,7 +1,7 @@
 --#############################################################################
 --#############################################################################
 --## HRA-VCCF Create Tables
---## Date: February 26, 2022
+--## Date: January 15, 2023
 --## Database: Microsoft SQL Server
 --## Author: Griffin M Weber, MD, PhD (weber@hms.harvard.edu)
 --#############################################################################
@@ -31,19 +31,23 @@ CREATE TABLE Vessel (
 	ReferenceURL varchar(500) not null,
 	Reference varchar(max) not null,
 	ReferenceDOI varchar(500) not null,
-	UBERON varchar(50) not null,
-	FMA varchar(50) not null,
 	VesselTypeID varchar(50) not null,
 	VesselSubTypeID varchar(50) not null,
 	BodyPartID varchar(100) not null,
 	BodySubPartID varchar(100) not null,
+	FTULabel varchar(200) not null,
+	FTUID varchar(50) not null,
+	UBERON varchar(50) not null,
+	FMA varchar(50) not null,
 	UBERONLabel varchar(200) not null,
 	FMALabel varchar(200) not null,
 	ASLabel varchar(200) not null,
 	ASID varchar(50) not null,
-	FTULabel varchar(200) not null,
-	FTUID varchar(50) not null,
+	OtherUberonFmaNameList varchar(max) not null,
+	TerminologiaAnatomica varchar(max) not null,
+	OtherVesselNameList varchar(max) not null,
 	VesselBaseName varchar(200) not null,
+	FullVesselNameList varchar(max) not null,
 	HasBranches int not null,
 	VirtualVesselOfList varchar(max) not null,
 	VirtualVesselOfCount int not null,
@@ -82,5 +86,24 @@ CREATE TABLE VesselCTB (
 	BGene1 varchar(50) not null,
 	BGene1Label varchar(500) not null,
 	BGene1ID varchar(500) not null
+)
+
+
+CREATE TABLE Geometry (
+	Vessel varchar(200) not null,
+	Property varchar(100) not null,
+	Sex varchar(50) not null,
+	Value varchar(50) not null,
+	StandardDeviation varchar(50) not null,
+	RangeLow varchar(50) not null,
+	RangeHigh varchar(50) not null,
+	Units varchar(20) not null,
+	Population varchar(100) not null,
+	SampleSize varchar(50) not null,
+	Method varchar(100) not null,
+	ReferenceURL varchar(500) not null,
+	Reference varchar(max) not null,
+	ReferenceDOI varchar(500) not null,
+	Notes varchar(max) not null
 )
 
