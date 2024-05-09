@@ -1,0 +1,762 @@
+id: https://w3id.org/vccf-schema
+name: VCCF
+description: A schema for VCCF
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  vccf: https://w3id.org/vccf-schema/
+default_prefix: vccf
+types:
+  CellType:
+    typeof: string
+  Gene:
+    typeof: string
+  identifier:
+    typeof: string
+  UBERONIdentifier:
+    typeof: string
+  FMAIdentifier:
+    typeof: string
+  CLIdentifier:
+    typeof: string
+  HGNCIdentifier:
+    typeof: string
+  Angiosome identifier:
+    typeof: string
+enums:
+  Property_enum:
+    permissible_values:
+      length:
+        description: length
+      luminal diameter:
+        description: luminal diameter
+      outer diameter:
+        description: outer diameter
+  Sex_enum:
+    permissible_values:
+      female:
+        description: Female
+      Unknown:
+        description: Unknown
+      male:
+        description: Male
+      Both:
+        description: Both
+  Units_enum:
+    permissible_values:
+      cm:
+        description: cm
+  Population_enum:
+    permissible_values:
+      Norwegian Study:
+        description: Norwegian Study
+      Unknown:
+        description: Unknown
+      Chinese Study:
+        description: Chinese Study
+      Romanian Study:
+        description: Romanian Study
+      French Study:
+        description: French Study
+      Swedish Study:
+        description: Swedish Study
+      Canadian Study:
+        description: Canadian Study
+      American Study:
+        description: American Study
+      Korean Study:
+        description: Korean Study
+      Caucasian (Hellenic) origin:
+        description: Caucasian (Hellenic) origin
+      Indian Study:
+        description: Indian Study
+      Mexican Study:
+        description: Mexican Study
+      Japanese Study:
+        description: Japanese Study
+      Malian Study:
+        description: Malian Study
+      Belgian Study:
+        description: Belgian Study
+  Method_enum:
+    permissible_values:
+      Ultrasound:
+        description: Ultrasound
+      Computed tomography:
+        description: Computed tomography
+      Not specified:
+        description: Not specified
+      Cadaveric study:
+        description: Cadaveric study
+  VesselType_enum:
+    permissible_values:
+      heart chamber:
+        description: heart chamber
+      sinus:
+        description: sinus
+      artery:
+        description: artery
+      capillary:
+        description: capillary
+      venule:
+        description: venule
+      arteriole:
+        description: arteriole
+      vein:
+        description: vein
+  VesselSubType_enum:
+    permissible_values:
+      continuous:
+        description: continuous
+      fenestrated:
+        description: fenestrated
+      sinusoid:
+        description: sinusoid
+  PortalSystem_enum:
+    permissible_values:
+      hypophyseal portal system:
+        description: hypophyseal portal system
+      renal portal system:
+        description: renal portal system
+      hepatic portal system:
+        description: hepatic portal system
+  BType_enum:
+    permissible_values:
+      BGene:
+        description: BGene
+  CT1_enum:
+    permissible_values:
+      fibroblast:
+        description: fibroblast
+      cardiac endothelial cell:
+        description: cardiac endothelial cell
+      blood vessel endothelial cell:
+        description: blood vessel endothelial cell
+      vascular smooth muscle cell:
+        description: vascular smooth muscle cell
+  CT2_enum:
+    permissible_values:
+      endothelial cell of venule:
+        description: endothelial cell of venule
+      endothelial cell of arteriole:
+        description: endothelial cell of arteriole
+      capillary endothelial cell:
+        description: capillary endothelial cell
+      endothelial cell of vein:
+        description: endothelial cell of vein
+      endothelial cell of artery:
+        description: endothelial cell of artery
+  CT2Label_enum:
+    permissible_values:
+      endothelial cell of venule:
+        description: endothelial cell of venule
+      endothelial cell of arteriole:
+        description: endothelial cell of arteriole
+      vein endothelial cell:
+        description: vein endothelial cell
+      capillary endothelial cell:
+        description: capillary endothelial cell
+      endothelial cell of artery:
+        description: endothelial cell of artery
+  BGene1_enum:
+    permissible_values:
+      TEK (TIE2):
+        description: TEK (TIE2)
+      MYOCD:
+        description: MYOCD
+      PECAM1 (CD31):
+        description: PECAM1 (CD31)
+      TIE1:
+        description: TIE1
+      CNN1:
+        description: CNN1
+      DDR2:
+        description: DDR2
+      CDH5 (CD144):
+        description: CDH5 (CD144)
+      TAGLN (SM22):
+        description: TAGLN (SM22)
+      ACTA2:
+        description: ACTA2
+      AIFM2 (FSP1):
+        description: AIFM2 (FSP1)
+  BGene1Label_enum:
+    permissible_values:
+      MYOCD:
+        description: MYOCD
+      TEK:
+        description: TEK
+      PECAM1:
+        description: PECAM1
+      TIE1:
+        description: TIE1
+      CDH5:
+        description: CDH5
+      CNN1:
+        description: CNN1
+      DDR2:
+        description: DDR2
+      ACTA2:
+        description: ACTA2
+      TAGLN:
+        description: TAGLN
+      AIFM2:
+        description: AIFM2
+  Relationship_enum:
+    permissible_values:
+      connected_to:
+        description: connected_to
+      supplies:
+        description: supplies
+      part_of:
+        description: part_of
+      drains:
+        description: drains
+      surrounded_by:
+        description: surrounded_by
+      overlaps:
+        description: overlaps
+      directly_supplies_drains:
+        description: directly_supplies_drains
+  BodyPart_enum:
+    permissible_values:
+      angiosome:
+        description: angiosome
+      large intestine:
+        description: large intestine
+      lung:
+        description: lung
+      liver:
+        description: liver
+      prostate gland:
+        description: prostate gland
+      kidney:
+        description: kidney
+      small intestine:
+        description: small intestine
+      muscular system:
+        description: muscular system
+      spleen:
+        description: spleen
+      pancreas:
+        description: pancreas
+      thymus:
+        description: thymus
+      abdominal cavity:
+        description: abdominal cavity
+      skin:
+        description: skin
+      skeleton:
+        description: skeleton
+slots:
+  RuleID:
+    examples:
+    - value: '21'
+    identifier: true
+    range: integer
+  MatchType:
+    examples:
+    - value: CellType
+    range: string
+  MatchVal:
+    examples:
+    - value: fibroblast
+    range: string
+  IncludeCTB:
+    examples:
+    - value: '1'
+    range: integer
+  CTBType:
+    examples:
+    - value: BGene
+    range: string
+  CTBName:
+    examples:
+    - value: DDR2
+    range: string
+  CTBLabel:
+    examples:
+    - value: DDR2
+    range: string
+  CTBID:
+    examples:
+    - value: HGNC:2731
+    range: identifier
+  ReferenceURL:
+    range: string
+  Reference:
+    range: string
+  ReferenceDOI:
+    range: string
+  Vessel:
+    examples:
+    - value: superior vena cava
+    range: string
+  VesselID:
+    examples:
+    - value: UBERON:0001585
+    range: identifier
+  Property:
+    examples:
+    - value: luminal diameter
+    range: Property_enum
+  Sex:
+    examples:
+    - value: Unknown
+    range: Sex_enum
+  Value:
+    examples:
+    - value: '1.9'
+    range: float
+  StandardDeviation:
+    examples:
+    - value: '0.37'
+    range: float
+  RangeLow:
+    examples:
+    - value: '-1'
+    range: float
+  RangeHigh:
+    examples:
+    - value: '-1'
+    range: float
+  Units:
+    examples:
+    - value: cm
+    range: Units_enum
+  Population:
+    examples:
+    - value: Belgian Study
+    range: Population_enum
+  SampleSize:
+    examples:
+    - value: '91'
+    range: integer
+  Method:
+    examples:
+    - value: Ultrasound
+    range: Method_enum
+  Notes:
+    examples:
+    - value: Rex S
+    range: string
+  BranchesFrom:
+    examples:
+    - value: truncus anterior of right pulmonary artery
+    range: string
+  VesselType:
+    examples:
+    - value: artery
+    range: VesselType_enum
+  VesselSubType:
+    examples:
+    - value: continuous
+    range: VesselSubType_enum
+  BodyPart:
+    examples:
+    - value: lung
+    range: string
+  BodySubPart:
+    examples:
+    - value: pulmonary alveolar parenchyma
+    range: string
+  PortalSystem:
+    examples:
+    - value: renal portal system
+    range: PortalSystem_enum
+  FTU:
+    examples:
+    - value: alveolus of lung
+    range: string
+  Anastomoses:
+    examples:
+    - value: anterior jugular vein (other side)
+    range: string
+  ArteryVeinConnects:
+    examples:
+    - value: pulmonary venule
+    range: string
+  ArteryVeinPair:
+    examples:
+    - value: intra-acinar venule
+    range: string
+  ForBranchesSee:
+    examples:
+    - value: segmental pulmonary artery
+    range: string
+  VirtualVessel:
+    examples:
+    - value: '0'
+    range: integer
+  BranchSequence:
+    examples:
+    - value: '999'
+    range: integer
+  SpatialReferenceObjectFemale:
+    examples:
+    - value: VH_F_pulmonary_artery_R
+    range: string
+  SpatialReferenceObjectMale:
+    examples:
+    - value: VH_M_pulmonary_artery_R
+    range: string
+  CoordX:
+    examples:
+    - value: '-10'
+    range: integer
+  CoordY:
+    examples:
+    - value: '-40'
+    range: integer
+  VesselTypeID:
+    examples:
+    - value: UBERON:0001637
+    range: identifier
+  VesselSubTypeID:
+    examples:
+    - value: UBERON:2005259
+    range: UBERONIdentifier
+  BodyPartID:
+    examples:
+    - value: UBERON:0002048
+    range: UBERONIdentifier
+  BodySubPartID:
+    examples:
+    - value: UBERON:0008870
+    range: identifier
+  FTULabel:
+    examples:
+    - value: alveolus of lung
+    range: string
+  FTUID:
+    examples:
+    - value: UBERON:0002299
+    range: UBERONIdentifier
+  UBERON:
+    examples:
+    - value: UBERON:0001651
+    range: UBERONIdentifier
+  FMA:
+    examples:
+    - value: FMA:8619
+    range: FMAIdentifier
+  UBERONLabel:
+    examples:
+    - value: right pulmonary artery
+    range: string
+  FMALabel:
+    examples:
+    - value: Right posterior segmental artery
+    range: string
+  ASLabel:
+    examples:
+    - value: Right posterior segmental artery
+    range: string
+  ASID:
+    examples:
+    - value: FMA:8619
+    range: identifier
+  OtherUberonFmaNameList:
+    examples:
+    - value: Posterior bronchopulmonary segment of right pulmonary artery;Posterior
+        segmental artery of right lung;Posterior segmental artery of right upper lobe;Ramus
+        posterior descendens (arteria pulmonalis dextra);Right posterior descending
+        pulmonary artery
+    range: string
+  TerminologiaAnatomica:
+    examples:
+    - value: Posterior segmental artery of right lung
+    range: string
+  OtherVesselNameList:
+    examples:
+    - value: pre-Rolandic artery
+    range: string
+  VesselBaseName:
+    examples:
+    - value: posterior segmental artery of right lung
+    range: string
+  FullVesselNameList:
+    examples:
+    - value: Posterior bronchopulmonary segment of right pulmonary artery;posterior
+        segmental artery of right lung;Posterior segmental artery of right upper lobe;Ramus
+        posterior descendens (arteria pulmonalis dextra);Right posterior descending
+        pulmonary artery;Right posterior segmental artery
+    range: string
+  HasBranches:
+    examples:
+    - value: '1'
+    range: integer
+  VirtualVesselOfList:
+    examples:
+    - value: anterior basal segmental artery of left lung;anterior basal segmental
+        artery of right lung;anterior segmental artery of left lung;anterior segmental
+        artery of right lung;apical segmental artery of right lung;apicoposterior
+        segmental artery of left lung;inferior lingular segmental artery of left lung;lateral
+        basal segmental artery of left lung;lateral basal segmental artery of right
+        lung;lateral segmental artery of right lung;medial basal segmental artery
+        of left lung;medial basal segmental artery of right lung;medial segmental
+        artery of right lung;posterior basal segmental artery of left lung;posterior
+        basal segmental artery of right lung;posterior segmental artery of right lung;superior
+        lingular segmental artery of left lung;superior segmental artery of left lung;superior
+        segmental artery of right lung
+    range: string
+  VirtualVesselOfCount:
+    examples:
+    - value: '0'
+    range: integer
+  VirtualInstances:
+    examples:
+    - value: '1'
+    range: integer
+  VirtualPath:
+    examples:
+    - value: anterior basal segmental artery of left lung;anterior basal segmental
+        artery of right lung;anterior segmental artery of left lung;anterior segmental
+        artery of right lung;apical segmental artery of right lung;apicoposterior
+        segmental artery of left lung;inferior lingular segmental artery of left lung;lateral
+        basal segmental artery of left lung;lateral basal segmental artery of right
+        lung;lateral segmental artery of right lung;medial basal segmental artery
+        of left lung;medial basal segmental artery of right lung;medial segmental
+        artery of right lung;posterior basal segmental artery of left lung;posterior
+        basal segmental artery of right lung;posterior segmental artery of right lung;superior
+        lingular segmental artery of left lung;superior segmental artery of left lung;superior
+        segmental artery of right lung
+    ##multivalued: true
+    range: string
+  PathFromHeart:
+    examples:
+    - value: right ventricle;pulmonary trunk;right pulmonary artery;truncus anterior
+        of right pulmonary artery;posterior segmental artery of right lung
+    range: string
+  PathFromHeartWithIDs:
+    examples:
+    - value: right ventricle;heart right ventricle;UBERON:0002080;pulmonary trunk;pulmonary
+        trunk;UBERON:0002333;right pulmonary artery;right pulmonary artery;UBERON:0001651;truncus
+        anterior of right pulmonary artery;Trunk of right upper lobar artery;FMA:8616;posterior
+        segmental artery of right lung;Right posterior segmental artery;FMA:8619
+    range: identifier
+  BType:
+    examples:
+    - value: BGene
+    range: BType_enum
+  CT1:
+    examples:
+    - value: vascular smooth muscle cell
+    range: CellType
+  CT1Label:
+    examples:
+    - value: vascular associated smooth muscle cell
+    range: CellType
+  CT1ID:
+    examples:
+    - value: CL:0000359
+    range: CLIdentifier
+  CT2:
+    examples:
+    - value: endothelial cell of artery
+    range: CellType
+  CT2Label:
+    examples:
+    - value: endothelial cell of artery
+    range: CellType
+  CT2ID:
+    examples:
+    - value: CL:1000413
+    range: CLIdentifier
+  CT3:
+    examples:
+    - value: endothelial cell of sinusoid
+    range: CellType
+  CT3Label:
+    examples:
+    - value: endothelial cell of sinusoid
+    range: CellType
+  CT3ID:
+    examples:
+    - value: CL:0002262
+    range: CLIdentifier
+  BGene1:
+    examples:
+    - value: TAGLN (SM22)
+    range: Gene
+  BGene1Label:
+    examples:
+    - value: TAGLN
+    range: string
+  BGene1ID:
+    examples:
+    - value: HGNC:11553
+    range: HGNCIdentifier
+  Relationship:
+    examples:
+    - value: drains
+    range: Relationship_enum
+  BodySubPartSequence:
+    examples:
+    - value: '999'
+    range: integer
+  Angiosome:
+    examples:
+    - value: ulnar
+    range: string
+  AngiosomeID:
+    examples:
+    - value: Angiosome:15
+    range: Angiosome identifier
+classes:
+  CellTypeBiomarker:
+    slots:
+    - RuleID
+    - MatchType
+    - MatchVal
+    - IncludeCTB
+    - CTBType
+    - CTBName
+    - CTBLabel
+    - CTBID
+    - ReferenceURL
+    - Reference
+    - ReferenceDOI
+    unique_keys:
+      ReferenceURL_key:
+        unique_key_name: ReferenceURL_key
+        unique_key_slots:
+        - ReferenceURL
+      Reference_key:
+        unique_key_name: Reference_key
+        unique_key_slots:
+        - Reference
+      ReferenceDOI_key:
+        unique_key_name: ReferenceDOI_key
+        unique_key_slots:
+        - ReferenceDOI
+  Geometry:
+    slots:
+    - Vessel
+    - VesselID
+    - Property
+    - Sex
+    - Value
+    - StandardDeviation
+    - RangeLow
+    - RangeHigh
+    - Units
+    - Population
+    - SampleSize
+    - Method
+    - ReferenceURL
+    - Reference
+    - ReferenceDOI
+    - Notes
+  Vessel:
+    slots:
+    - BranchesFrom
+    - Vessel
+    - VesselType
+    - VesselSubType
+    - BodyPart
+    - BodySubPart
+    - PortalSystem
+    - FTU
+    - Sex
+    - Anastomoses
+    - ArteryVeinConnects
+    - ArteryVeinPair
+    - ForBranchesSee
+    - VirtualVessel
+    - BranchSequence
+    - SpatialReferenceObjectFemale
+    - SpatialReferenceObjectMale
+    - CoordX
+    - CoordY
+    - ReferenceURL
+    - Reference
+    - ReferenceDOI
+    - VesselTypeID
+    - VesselSubTypeID
+    - BodyPartID
+    - BodySubPartID
+    - FTULabel
+    - FTUID
+    - UBERON
+    - FMA
+    - UBERONLabel
+    - FMALabel
+    - ASLabel
+    - ASID
+    - OtherUberonFmaNameList
+    - TerminologiaAnatomica
+    - OtherVesselNameList
+    - VesselBaseName
+    - FullVesselNameList
+    - HasBranches
+    - VirtualVesselOfList
+    - VirtualVesselOfCount
+    - VirtualInstances
+    - VirtualPath
+    - PathFromHeart
+    - PathFromHeartWithIDs
+    unique_keys:
+      Vessel_key:
+        unique_key_name: Vessel_key
+        unique_key_slots:
+        - Vessel
+      SpatialReferenceObjectFemale_key:
+        unique_key_name: SpatialReferenceObjectFemale_key
+        unique_key_slots:
+        - SpatialReferenceObjectFemale
+      SpatialReferenceObjectMale_key:
+        unique_key_name: SpatialReferenceObjectMale_key
+        unique_key_slots:
+        - SpatialReferenceObjectMale
+      OtherVesselNameList_key:
+        unique_key_name: OtherVesselNameList_key
+        unique_key_slots:
+        - OtherVesselNameList
+      VirtualVesselOfList_key:
+        unique_key_name: VirtualVesselOfList_key
+        unique_key_slots:
+        - VirtualVesselOfList
+      PathFromHeart_key:
+        unique_key_name: PathFromHeart_key
+        unique_key_slots:
+        - PathFromHeart
+      PathFromHeartWithIDs_key:
+        unique_key_name: PathFromHeartWithIDs_key
+        unique_key_slots:
+        - PathFromHeartWithIDs
+  VesselCTB:
+    slots:
+    - Vessel
+    - VesselID
+    - BType
+    - CT1
+    - CT1Label
+    - CT1ID
+    - CT2
+    - CT2Label
+    - CT2ID
+    - CT3
+    - CT3Label
+    - CT3ID
+    - BGene1
+    - BGene1Label
+    - BGene1ID
+    - PathFromHeart
+  VesselOrganCrosswalk:
+    slots:
+    - Vessel
+    - VesselID
+    - Relationship
+    - BodySubPart
+    - BodySubPartID
+    - BodySubPartSequence
+    - BodyPart
+    - BodyPartID
+    - FTU
+    - FTULabel
+    - FTUID
+    - Angiosome
+    - AngiosomeID
+
