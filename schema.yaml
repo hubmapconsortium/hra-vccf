@@ -37,9 +37,15 @@ enums:
     permissible_values:
       female:
         description: Female
+      male:
+        description: Male
+  SexCapitalized_enum:
+    permissible_values:
+      Female:
+        description: Female
       Unknown:
         description: Unknown
-      male:
+      Male:
         description: Male
       Both:
         description: Both
@@ -48,37 +54,6 @@ enums:
       cm:
         description: cm
   Population_enum:
-    permissible_values:
-      Norwegian Study:
-        description: Norwegian Study
-      Unknown:
-        description: Unknown
-      Chinese Study:
-        description: Chinese Study
-      Romanian Study:
-        description: Romanian Study
-      French Study:
-        description: French Study
-      Swedish Study:
-        description: Swedish Study
-      Canadian Study:
-        description: Canadian Study
-      American Study:
-        description: American Study
-      Korean Study:
-        description: Korean Study
-      Caucasian (Hellenic) origin:
-        description: Caucasian (Hellenic) origin
-      Indian Study:
-        description: Indian Study
-      Mexican Study:
-        description: Mexican Study
-      Japanese Study:
-        description: Japanese Study
-      Malian Study:
-        description: Malian Study
-      Belgian Study:
-        description: Belgian Study
   Method_enum:
     permissible_values:
       Ultrasound:
@@ -649,6 +624,9 @@ classes:
     - Reference
     - ReferenceDOI
     - Notes
+    slot_usage:
+      Sex:
+        range: SexCapitalized_enum
   Vessel:
     slots:
     - BranchesFrom
