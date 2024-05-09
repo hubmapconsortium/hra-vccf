@@ -226,312 +226,352 @@ enums:
         description: skeleton
 slots:
   RuleID:
+    description: The unique identifier for a rule.
     examples:
     - value: '21'
     identifier: true
     range: integer
   MatchType:
+    description: The type of match for the rule (e.g. CellType).
     examples:
     - value: CellType
     range: string
   MatchVal:
+    description: The specific value to match for the given MatchType.
     examples:
     - value: fibroblast
     range: string
   IncludeCTB:
+    description: Flag indicating whether to include cell type-based information.
     examples:
     - value: '1'
     range: integer
   CTBType:
+    description: The type of cell type-based information (e.g. BGene).
     examples:
     - value: BGene
     range: string
   CTBName:
+    description: The name of the cell type-based entity.
     examples:
     - value: DDR2
-    range: string
+    range: string  
   CTBLabel:
+    description: The label for the cell type-based entity.
     examples:
     - value: DDR2
     range: string
   CTBID:
+    description: The identifier for the cell type-based entity.
     examples:
     - value: HGNC:2731
     range: identifier
   ReferenceURL:
+    description: The URL for a reference providing evidence for the rule or relationship.
     range: string
   Reference:
-    range: string
+    description: A textual reference (e.g. citation) providing evidence for the rule or relationship.
+    range: string 
   ReferenceDOI:
+    description: The DOI of the reference if available.
     range: string
   Vessel:
+    description: The name of a blood vessel.
     examples:
     - value: superior vena cava
     range: string
-  VesselID:
+  VesselID: 
+    description: The identifier for a blood vessel, typically from the UBERON ontology.
     examples:
     - value: UBERON:0001585
     range: identifier
   Property:
+    description: A property of the blood vessel (e.g. luminal diameter).
     examples:
     - value: luminal diameter
     range: Property_enum
   Sex:
+    description: The sex for which the vessel property applies.
     examples:
-    - value: Unknown
+    - value: Unknown 
     range: Sex_enum
   Value:
+    description: The value of the vessel property.
     examples:
     - value: '1.9'
     range: float
   StandardDeviation:
+    description: The standard deviation of the vessel property value if applicable.
     examples:
     - value: '0.37'
     range: float
   RangeLow:
+    description: The low end of the range for the vessel property value.
     examples:
-    - value: '-1'
+    - value: '-1' 
     range: float
   RangeHigh:
+    description: The high end of the range for the vessel property value.
     examples:
     - value: '-1'
     range: float
   Units:
+    description: The units for the vessel property value.
     examples:
     - value: cm
     range: Units_enum
   Population:
+    description: The population from which the vessel property data was obtained.
     examples:
     - value: Belgian Study
-    range: Population_enum
+    range: Population_enum 
   SampleSize:
-    examples:
+    description: The sample size (number of individuals) from which the vessel property data was obtained.
+    examples:  
     - value: '91'
     range: integer
   Method:
+    description: The method used to obtain the vessel property data.
     examples:
-    - value: Ultrasound
+    - value: Ultrasound 
     range: Method_enum
   Notes:
+    description: Additional notes about the vessel property data.
     examples:
     - value: Rex S
     range: string
   BranchesFrom:
+    description: The parent vessel from which the current vessel branches. For veins, this indicates the vessel it drains into.
     examples:
     - value: truncus anterior of right pulmonary artery
     range: string
   VesselType:
+    description: The type of blood vessel (e.g. artery, vein, capillary).
     examples:
     - value: artery
     range: VesselType_enum
   VesselSubType:
+    description: The subtype of the blood vessel if applicable (e.g. continuous, fenestrated, sinusoid capillaries).
     examples:
     - value: continuous
     range: VesselSubType_enum
   BodyPart:
+    description: The organ or main body part supplied or drained by the blood vessel.
     examples:
     - value: lung
     range: string
   BodySubPart:
+    description: The specific anatomical structure supplied or drained by the blood vessel within the BodyPart.
     examples:
     - value: pulmonary alveolar parenchyma
     range: string
-  PortalSystem:
+  PortalSystem:  
+    description: The portal system, if any, that the blood vessel is part of (e.g. hepatic portal system).
     examples:
     - value: renal portal system
     range: PortalSystem_enum
   FTU:
+    description: The functional tissue unit, if any, that the blood vessel is part of (e.g. liver lobule).  
     examples:
     - value: alveolus of lung
     range: string
   Anastomoses:
+    description: Other blood vessels that the current vessel anastomoses with.
     examples:
     - value: anterior jugular vein (other side)
     range: string
   ArteryVeinConnects:
+    description: For end arteriole/venule branches, the corresponding venule/arteriole it connects to in a different vessel tree.
     examples:
     - value: pulmonary venule
     range: string
-  ArteryVeinPair:
+  ArteryVeinPair:  
+    description: For arteries/veins, the corresponding vein/artery with the same name.
     examples:
     - value: intra-acinar venule
     range: string
   ForBranchesSee:
+    description: For some vessels like left/right structures, refers to the generic "parent" vessel entry that lists the branches, rather than listing them redundantly.
     examples:
     - value: segmental pulmonary artery
     range: string
   VirtualVessel:
+    description: Indicates whether the current entry is a generic "virtual" vessel that merges information from multiple vessels (e.g. left/right) to avoid redundancy.
     examples:
-    - value: '0'
+    - value: '0'  
     range: integer
   BranchSequence:
+    description: The order in which the vessel branches off its parent vessel. Vessels branching at the same point can have the same value. A value of 999 indicates information to be provided later.
     examples:
     - value: '999'
     range: integer
   SpatialReferenceObjectFemale:
+    description: The name of the corresponding 3D spatial reference object for this vessel in a female.
     examples:
     - value: VH_F_pulmonary_artery_R
     range: string
   SpatialReferenceObjectMale:
-    examples:
+    description: The name of the corresponding 3D spatial reference object for this vessel in a male.
+    examples:  
     - value: VH_M_pulmonary_artery_R
     range: string
   CoordX:
+    description: The X coordinate for the approximate spatial location of the vessel. Currently for schematic purposes rather than precise location.
     examples:
     - value: '-10'
     range: integer
   CoordY:
+    description: The Y coordinate for the approximate spatial location of the vessel. Currently for schematic purposes rather than precise location.
     examples:
-    - value: '-40'
+    - value: '-40' 
     range: integer
   VesselTypeID:
+    description: The identifier for the VesselType, from the UBERON or FMA ontology.
     examples:
     - value: UBERON:0001637
-    range: identifier
+    range: identifier  
   VesselSubTypeID:
+    description: The identifier for the VesselSubType, from the UBERON ontology.
     examples:
     - value: UBERON:2005259
     range: UBERONIdentifier
   BodyPartID:
+    description: The identifier for the BodyPart, from the UBERON or FMA ontology.
     examples:
     - value: UBERON:0002048
     range: UBERONIdentifier
   BodySubPartID:
+    description: The identifier for the BodySubPart, from the UBERON or FMA ontology.
     examples:
     - value: UBERON:0008870
     range: identifier
-  FTULabel:
+  FTULabel:  
+    description: The label for the functional tissue unit (FTU) the vessel is part of, from UBERON if available, otherwise FMA.
     examples:
     - value: alveolus of lung
     range: string
   FTUID:
+    description: The identifier for the functional tissue unit (FTU) the vessel is part of, from UBERON if available, otherwise FMA.
     examples:
     - value: UBERON:0002299
     range: UBERONIdentifier
   UBERON:
-    examples:
+    description: The identifier for the vessel in the UBERON ontology.
+    examples:  
     - value: UBERON:0001651
     range: UBERONIdentifier
   FMA:
+    description: The identifier for the vessel in the FMA ontology.
     examples:
-    - value: FMA:8619
+    - value: FMA:8619  
     range: FMAIdentifier
   UBERONLabel:
+    description: The primary label for the vessel in the UBERON ontology.
     examples:
     - value: right pulmonary artery
     range: string
   FMALabel:
+    description: The primary label for the vessel in the FMA ontology.
     examples:
     - value: Right posterior segmental artery
     range: string
-  ASLabel:
+  ASLabel:  
+    description: The preferred label for the vessel, from UBERON if available, otherwise FMA.
     examples:
     - value: Right posterior segmental artery
     range: string
   ASID:
+    description: The preferred identifier for the vessel, from UBERON if available, otherwise FMA.
     examples:
     - value: FMA:8619
     range: identifier
   OtherUberonFmaNameList:
+    description: Alternative names for the vessel from the UBERON and FMA ontologies.
     examples:
-    - value: Posterior bronchopulmonary segment of right pulmonary artery;Posterior
-        segmental artery of right lung;Posterior segmental artery of right upper lobe;Ramus
-        posterior descendens (arteria pulmonalis dextra);Right posterior descending
-        pulmonary artery
+    - value: Posterior bronchopulmonary segment of right pulmonary artery;Posterior segmental artery of right lung;Posterior segmental artery of right upper lobe;Ramus posterior descendens (arteria pulmonalis dextra);Right posterior descending pulmonary artery
     range: string
-  TerminologiaAnatomica:
+  TerminologiaAnatomica:  
+    description: The name for the corresponding vessel in the Terminologia Anatomica standard.
     examples:
     - value: Posterior segmental artery of right lung
-    range: string
+    range: string  
   OtherVesselNameList:
+    description: Additional names for the vessel beyond those from UBERON, FMA, and TA.
     examples:
     - value: pre-Rolandic artery
     range: string
-  VesselBaseName:
+  VesselBaseName: 
+    description: The canonical name for the vessel, without any trailing numbers to distinguish multiple branch entries.
     examples:
-    - value: posterior segmental artery of right lung
+    - value: posterior segmental artery of right lung   
     range: string
   FullVesselNameList:
-    examples:
-    - value: Posterior bronchopulmonary segment of right pulmonary artery;posterior
-        segmental artery of right lung;Posterior segmental artery of right upper lobe;Ramus
-        posterior descendens (arteria pulmonalis dextra);Right posterior descending
-        pulmonary artery;Right posterior segmental artery
+    description: A semicolon-delimited list of all the names and synonyms for the vessel from across the source ontologies and lists.
+    examples:  
+    - value: Posterior bronchopulmonary segment of right pulmonary artery;posterior segmental artery of right lung;Posterior segmental artery of right upper lobe;Ramus posterior descendens (arteria pulmonalis dextra);Right posterior descending pulmonary artery;Right posterior segmental artery 
     range: string
   HasBranches:
+    description: Whether the vessel entry has branches listed. 1 if yes, 0 if no.
     examples:
     - value: '1'
-    range: integer
+    range: integer 
   VirtualVesselOfList:
+    description: For virtual vessel entries, a semicolon-delimited list of the "real" vessels that it merges.
     examples:
-    - value: anterior basal segmental artery of left lung;anterior basal segmental
-        artery of right lung;anterior segmental artery of left lung;anterior segmental
-        artery of right lung;apical segmental artery of right lung;apicoposterior
-        segmental artery of left lung;inferior lingular segmental artery of left lung;lateral
-        basal segmental artery of left lung;lateral basal segmental artery of right
-        lung;lateral segmental artery of right lung;medial basal segmental artery
-        of left lung;medial basal segmental artery of right lung;medial segmental
-        artery of right lung;posterior basal segmental artery of left lung;posterior
-        basal segmental artery of right lung;posterior segmental artery of right lung;superior
-        lingular segmental artery of left lung;superior segmental artery of left lung;superior
-        segmental artery of right lung
+    - value: anterior basal segmental artery of left lung;anterior basal segmental artery of right lung;anterior segmental artery of left lung;anterior segmental artery of right lung;apical segmental artery of right lung;apicoposterior segmental artery of left lung;inferior lingular segmental artery of left lung;lateral basal segmental artery of left lung;lateral basal segmental artery of right lung;lateral segmental artery of right lung;medial basal segmental artery of left lung;medial basal segmental artery of right lung;medial segmental artery of right lung;posterior basal segmental artery of left lung;posterior basal segmental artery of right lung;posterior segmental artery of right lung;superior lingular segmental artery of left lung;superior segmental artery of left lung;superior segmental artery of right lung 
     range: string
   VirtualVesselOfCount:
+    description: For virtual vessels, the number of "real" vessels it merges.
     examples:
-    - value: '0'
+    - value: '0'  
     range: integer
   VirtualInstances:
+    description: The number of times this vessel would be referenced if virtual vessels didn't exist, based on path to heart.
     examples:
     - value: '1'
     range: integer
   VirtualPath:
+    description: The path of vessels traversed from this vessel to the heart, including any virtual vessels rather than the "real" vessels they merge.
     examples:
-    - value: anterior basal segmental artery of left lung;anterior basal segmental
-        artery of right lung;anterior segmental artery of left lung;anterior segmental
-        artery of right lung;apical segmental artery of right lung;apicoposterior
-        segmental artery of left lung;inferior lingular segmental artery of left lung;lateral
-        basal segmental artery of left lung;lateral basal segmental artery of right
-        lung;lateral segmental artery of right lung;medial basal segmental artery
-        of left lung;medial basal segmental artery of right lung;medial segmental
-        artery of right lung;posterior basal segmental artery of left lung;posterior
-        basal segmental artery of right lung;posterior segmental artery of right lung;superior
-        lingular segmental artery of left lung;superior segmental artery of left lung;superior
-        segmental artery of right lung
-    ##multivalued: true
-    range: string
+    - value: anterior basal segmental artery of left lung;anterior basal segmental artery of right lung;anterior segmental artery of left lung;anterior segmental artery of right lung;apical segmental artery of right lung;apicoposterior segmental artery of left lung;inferior lingular segmental artery of left lung;lateral basal segmental artery of left lung;lateral basal segmental artery of right lung;lateral segmental artery of right lung;medial basal segmental artery of left lung;medial basal segmental artery of right lung;medial segmental artery of right lung;posterior basal segmental artery of left lung;posterior basal segmental artery of right lung;posterior segmental artery of right lung;superior lingular segmental artery of left lung;superior segmental artery of left lung;superior segmental artery of right lung
+    range: string   
   PathFromHeart:
+    description: The path of vessels traversed from the heart to reach this vessel.
     examples:
-    - value: right ventricle;pulmonary trunk;right pulmonary artery;truncus anterior
-        of right pulmonary artery;posterior segmental artery of right lung
+    - value: right ventricle;pulmonary trunk;right pulmonary artery;truncus anterior of right pulmonary artery;posterior segmental artery of right lung
     range: string
   PathFromHeartWithIDs:
-    examples:
-    - value: right ventricle;heart right ventricle;UBERON:0002080;pulmonary trunk;pulmonary
-        trunk;UBERON:0002333;right pulmonary artery;right pulmonary artery;UBERON:0001651;truncus
-        anterior of right pulmonary artery;Trunk of right upper lobar artery;FMA:8616;posterior
-        segmental artery of right lung;Right posterior segmental artery;FMA:8619
+    description: The path of vessels from heart to this vessel, with each entry including its name, preferred label, and preferred ID.
+    examples: 
+    - value: right ventricle;heart right ventricle;UBERON:0002080;pulmonary trunk;pulmonary trunk;UBERON:0002333;right pulmonary artery;right pulmonary artery;UBERON:0001651;truncus anterior of right pulmonary artery;Trunk of right upper lobar artery;FMA:8616;posterior segmental artery of right lung;Right posterior segmental artery;FMA:8619
     range: identifier
   BType:
+    description: The type of biomarker, e.g. gene, protein, etc.
     examples:
     - value: BGene
     range: BType_enum
   CT1:
+    description: The primary cell type associated with the vessel.
     examples:
-    - value: vascular smooth muscle cell
+    - value: vascular smooth muscle cell 
     range: CellType
   CT1Label:
-    examples:
+    description: The label for the primary cell type associated with the vessel.
+    examples:  
     - value: vascular associated smooth muscle cell
     range: CellType
   CT1ID:
+    description: The ontology ID for the primary cell type associated with the vessel.
     examples:
     - value: CL:0000359
     range: CLIdentifier
-  CT2:
+  CT2: 
+    description: The secondary cell type associated with the vessel.
     examples:
     - value: endothelial cell of artery
     range: CellType
   CT2Label:
+    description: The label for the secondary cell type associated with the vessel.
     examples:
     - value: endothelial cell of artery
     range: CellType
