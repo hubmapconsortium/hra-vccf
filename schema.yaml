@@ -668,6 +668,8 @@ classes:
       Sex:
         range: SexCapitalized_enum
   Vessel:
+    deprecated: The BodySubPart and BodySubPartID fields in the Vessels.csv file are no longer being updated. This has been moved to the new VesselOrganCrosswalk.csv file and expanded. Please use this file for the most recent mappings
+    deprecated_element_has_possible_replacement: VesselOrganCrosswalk
     slots:
     - BranchesFrom
     - Vessel
