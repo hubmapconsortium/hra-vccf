@@ -16,29 +16,39 @@ types:
     typeof: string
   UBERONIdentifier:
     typeof: string
+    pattern: ^UBERON:\d+$
   FMAIdentifier:
     typeof: string
+    pattern: ^FMA:\d+$
   CLIdentifier:
     typeof: string
+    pattern: ^CL:\d+$
   HGNCIdentifier:
     typeof: string
-  Angiosome identifier:
+  AngiosomeIdentifier:
     typeof: string
+    pattern: ^Angiosome:\d+$
 enums:
   Property_enum:
     permissible_values:
       length:
         description: length
+        meaning: PATO:0000122
       luminal diameter:
         description: luminal diameter
       outer diameter:
         description: outer diameter
   Sex_enum:
+    description: Allowed Sexes (uncapitalized version)
+    comments:
+      - ideally Vessel.csv would be normalized to use the capitalized, as the other files
     permissible_values:
       female:
         description: Female
+        meaning: PATO:0000383
       male:
         description: Male
+        meaning: PATO:0000384
   SexCapitalized_enum:
     permissible_values:
       Female:
@@ -58,8 +68,10 @@ enums:
     permissible_values:
       Ultrasound:
         description: Ultrasound
+        meaning: OBI:0001098 
       Computed tomography:
         description: Computed tomography
+        meaning: OBI:0002986
       Not specified:
         description: Not specified
       Cadaveric study:
@@ -68,18 +80,26 @@ enums:
     permissible_values:
       heart chamber:
         description: heart chamber
+        meaning: UBERON:0004151
       sinus:
         description: sinus
+        comments:
+          - Neither Uberon nor FMA have a general concept of sinus (in FMA it is a General Anatomic Term)
       artery:
         description: artery
+        meaning: UBERON:0001637
       capillary:
         description: capillary
+        meaning: UBERON:0001982
       venule:
         description: venule
+        meaning: UBERON:0001979
       arteriole:
         description: arteriole
+        meaning: UBERON:0001980
       vein:
         description: vein
+        meaning: UBERON:0001638
   VesselSubType_enum:
     permissible_values:
       continuous:
@@ -92,10 +112,13 @@ enums:
     permissible_values:
       hypophyseal portal system:
         description: hypophyseal portal system
+        meaning: UBERON:0009976
       renal portal system:
         description: renal portal system
+        meaning: UBERON:0010195
       hepatic portal system:
         description: hepatic portal system
+        meaning: UBERON:0010194
   BType_enum:
     permissible_values:
       BGene:
@@ -104,126 +127,72 @@ enums:
     permissible_values:
       fibroblast:
         description: fibroblast
+        meaning: CL:0000057
       cardiac endothelial cell:
         description: cardiac endothelial cell
+        meaning: CL:0010008
       blood vessel endothelial cell:
         description: blood vessel endothelial cell
+        meaning: CL:0000071
       vascular smooth muscle cell:
         description: vascular smooth muscle cell
+        meaning: CL:0000359
   CT2_enum:
     permissible_values:
       endothelial cell of venule:
         description: endothelial cell of venule
+        meaning: CL:1000414
       endothelial cell of arteriole:
         description: endothelial cell of arteriole
+        meaning: CL:1000412
       capillary endothelial cell:
         description: capillary endothelial cell
+        meaning: CL:0002144
       endothelial cell of vein:
         description: endothelial cell of vein
+        meaning: CL:0002543
       endothelial cell of artery:
         description: endothelial cell of artery
+        meaning: CL:1000413
   CT2Label_enum:
     permissible_values:
       endothelial cell of venule:
         description: endothelial cell of venule
+        meaning: CL:1000414
       endothelial cell of arteriole:
         description: endothelial cell of arteriole
+        meaning: CL:1000412
       vein endothelial cell:
         description: vein endothelial cell
+        meaning: CL:0002543        
       capillary endothelial cell:
         description: capillary endothelial cell
+        meaning: CL:0002144        
       endothelial cell of artery:
         description: endothelial cell of artery
-  BGene1_enum:
-    permissible_values:
-      TEK (TIE2):
-        description: TEK (TIE2)
-      MYOCD:
-        description: MYOCD
-      PECAM1 (CD31):
-        description: PECAM1 (CD31)
-      TIE1:
-        description: TIE1
-      CNN1:
-        description: CNN1
-      DDR2:
-        description: DDR2
-      CDH5 (CD144):
-        description: CDH5 (CD144)
-      TAGLN (SM22):
-        description: TAGLN (SM22)
-      ACTA2:
-        description: ACTA2
-      AIFM2 (FSP1):
-        description: AIFM2 (FSP1)
-  BGene1Label_enum:
-    permissible_values:
-      MYOCD:
-        description: MYOCD
-      TEK:
-        description: TEK
-      PECAM1:
-        description: PECAM1
-      TIE1:
-        description: TIE1
-      CDH5:
-        description: CDH5
-      CNN1:
-        description: CNN1
-      DDR2:
-        description: DDR2
-      ACTA2:
-        description: ACTA2
-      TAGLN:
-        description: TAGLN
-      AIFM2:
-        description: AIFM2
+        meaning: CL:1000413        
   Relationship_enum:
     permissible_values:
       connected_to:
         description: connected_to
+        meaning: RO:0002170
       supplies:
         description: supplies
+        meaning: RO:0002178
       part_of:
         description: part_of
+        meaning: BFO:0000050
       drains:
         description: drains
+        meaning: RO:0002179
       surrounded_by:
         description: surrounded_by
+        meaning: RO:0002219
       overlaps:
         description: overlaps
+        meaning: RO:0002131
       directly_supplies_drains:
         description: directly_supplies_drains
-  BodyPart_enum:
-    permissible_values:
-      angiosome:
-        description: angiosome
-      large intestine:
-        description: large intestine
-      lung:
-        description: lung
-      liver:
-        description: liver
-      prostate gland:
-        description: prostate gland
-      kidney:
-        description: kidney
-      small intestine:
-        description: small intestine
-      muscular system:
-        description: muscular system
-      spleen:
-        description: spleen
-      pancreas:
-        description: pancreas
-      thymus:
-        description: thymus
-      abdominal cavity:
-        description: abdominal cavity
-      skin:
-        description: skin
-      skeleton:
-        description: skeleton
 slots:
   RuleID:
     description: The unique identifier for a rule.
@@ -281,7 +250,7 @@ slots:
     - value: superior vena cava
     range: string
   VesselID: 
-    description: The identifier for a blood vessel, typically from the UBERON ontology.
+    description: The identifier for a blood vessel, typically from the UBERON ontology. If UBERON not available, FMA.
     examples:
     - value: UBERON:0001585
     range: identifier
@@ -618,7 +587,7 @@ slots:
   AngiosomeID:
     examples:
     - value: Angiosome:15
-    range: Angiosome identifier
+    range: AngiosomeIdentifier
 classes:
   CellTypeBiomarker:
     slots:
